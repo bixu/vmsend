@@ -6,11 +6,15 @@ if [ "$2" == "" ] ;
     exit
 fi
 
+echo "Sending vm from host `hostname` to host `ssh $2 hostname`..."
+
 vmadm stop $1 
 
 vmadm send $1 | ssh $2 vmadm receive 
 
 ssh $2 vmadm start $1
+
+echo "Status of transferred vm on host `ssh $2 hostname`:"
 
 ssh $2 vmadm list | grep $1
 
