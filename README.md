@@ -7,10 +7,6 @@ Successfully sent 2dd8eb66-db74-45e6-82a2-93adb69dd726
 Successfully received 2dd8eb66-db74-45e6-82a2-93adb69dd726
 Successfully started 2dd8eb66-db74-45e6-82a2-93adb69dd726
 
-real    0m41.176s
-user    0m3.951s
-sys     0m1.721s
-
 UUID                                  TYPE  RAM      STATE             ALIAS
 2dd8eb66-db74-45e6-82a2-93adb69dd726  OS    128      running           zonename
 ```
