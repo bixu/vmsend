@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ "$2" == "" ] ;
+  then
+    echo "Usage: $0 <uuid> <target>"
+    exit
+fi
+
+vmadm stop $1 
+
+vmadm send $1 | ssh $2 vmadm receive 
+
+ssh $2 vmadm start $1
+
+ssh $2 vmadm list | grep $1
+
