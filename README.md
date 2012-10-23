@@ -1,3 +1,5 @@
+Wrapper for easily moving zones (and possibly KVM VMs) between physical hosts in SmartOS.
+
 EXAMPLE:
 
 ```
